@@ -132,6 +132,7 @@ img {
 .contacts-icon {
   display: block;
   margin-right: 10px;
+  fill: rgb(117, 117, 117);
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -673,12 +674,14 @@ justify-content: center;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-close-modal:hover,
 .button-close-modal:focus{
-  background-color: rgba(0, 0, 0, 0.342);
-  fill: #fff;
+  fill: var(--focus-color);
 }
 
 .is-hidden{
